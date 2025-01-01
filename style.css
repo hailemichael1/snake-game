@@ -1,0 +1,102 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: linear-gradient(150deg, #224503, #a01265);
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    margin-top: 1%;
+    color: #000;
+    text-shadow: 4px 4px 4px #FFF;
+}
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(150deg, #224503, #a01265);
+}
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    background: #293447;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: -3%;
+}
+.game-ditaile{
+    color: #b8C6DC;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+.play-bord{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background: #212837;
+}
+.play-bord .food{
+    background: #ff003d;
+}
+.play-bord .head{
+    background: #60cbff;
+}
+.control{
+    display: flex;
+    justify-content: space-between;
+}
+.control i {
+    padding: 25px 0;
+    color: #b8C6DC;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: calc(100% / 4);
+    border-right: 1px solid #171b26;
+}
+
+
+/* #preloder{
+    background: url(img/88874264550359.5ad6205e4a526.gif) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+} */
+
+@media screen and (max-width: 800px) {
+
+    h1{
+        font-size: 17px;
+    }
+    .wrapper{
+        width: 90vmin;
+        height: 115vmin;
+        margin-top: -2%;
+    }
+    .game-ditaile{
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+    .control{
+        display: flex;
+    }
+    .control i {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}
